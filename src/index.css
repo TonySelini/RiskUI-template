@@ -2,10 +2,6 @@
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   background-color: #101316;
   color: rgba(255, 255, 255, 0.87);
-
-  @media (max-width: 1024px) {
-    font-size: 16px;
-  }
 }
 
 body {

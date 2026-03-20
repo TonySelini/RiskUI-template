@@ -1,0 +1,110 @@
+.ag-theme-quartz-dark {
+  --ag-header-background-color: rgb(44, 51, 63);
+  /* --ag-row-border-width: 1px; */
+  /* 
+      --ag-grid-size: 4px; */
+  --ag-background-color: rgb(2, 7, 25);
+  --ag-foreground-color: rgb(255, 255, 255);
+  --ag-font-size: 14px;
+  --ag-row-height: 28px;
+  --ag-header-height: 32px;
+  --ag-wrapper-border-radius: 0;
+  /* font-weight: 500; */
+}
+
+/* .ag-root-wrapper {
+  border-radius: 0;
+} */
+/* scrollbar */
+.ag-root-wrapper ::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+.ag-root-wrapper ::-webkit-scrollbar-track {
+  background: rgb(23, 26, 31);
+}
+
+.ag-root-wrapper ::-webkit-scrollbar-thumb {
+  background-color: rgb(96, 125, 139);
+  border-radius: 0px;
+  border: 1px solid rgb(23, 26, 31);
+}
+/* scrollbar */
+
+/* remove each collumn header padding to both left and right 8px */
+.ag-header-cell {
+  padding: 0;
+}
+/* remove each collumn header menu icon that has a margin */
+
+.ag-header-menu-icon {
+  margin: 0 !important;
+}
+
+/*TODO: Rotate the header text to save the sapce?*/
+/* .ag-header-cell-label .ag-header-cell-text {
+      transform: rotate(-7deg);
+    } */
+
+span .ag-header-menu-icon {
+  margin: 20px;
+  padding: 0;
+}
+
+/* .ag-theme-quartz-dark .ag-row.ag-row-level-0 {
+      background-color: rgba(30, 30, 30, 0.7);
+    }
+    
+    .ag-theme-quartz-dark .ag-row.ag-row-level-1 {
+      background-color: rgba(30, 30, 30, 0.5);
+    } */
+
+/* .ag-theme-quartz-dark .ag-row.ag-row-level-2 {
+      background-color: rgba(89, 0, 255, 0.3);
+    } */
+
+/* .ag-theme-quartz-dark .ag-row.ag-row-level-3 {
+      background-color: rgba(89, 0, 255, 0.1);
+    } */
+
+/* TODO: THIS TAKES A WHILE TO FIND THE CLASSNAME */
+.ag-center-aligned-header {
+  .ag-header-cell-label {
+    justify-content: center;
+  }
+}
+/* to make the HeaderMenuButton align to the right always*/
+.ag-right-aligned-header .ag-cell-label-container {
+  flex-direction: row-reverse;
+}
+
+/* .edgeDialColumnHighlighted {
+      background-color: #00695c;
+      :hover {
+        background-color: #00695c;
+      }
+    }
+    
+    .sizeDialColumnHighlighted {
+      background-color: #00838f;
+      :hover {
+        background-color: #00838f;
+      }
+    } */
+
+/*  TODO: UPDATE this to proper class header name */
+.ag-right-aligned-header {
+  background-color: #283593;
+  :hover,
+  :focus,
+  :active {
+    background-color: #283593;
+  }
+}
+.ag-center-aligned-header {
+  background-color: #006064;
+  :hover {
+    background-color: #006064;
+  }
+}
