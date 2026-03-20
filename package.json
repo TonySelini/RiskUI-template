@@ -17,8 +17,19 @@
     "@mui/icons-material": "^7.3.9",
     "@mui/material": "^7.3.9",
     "ag-grid-enterprise": "^35.1.0",
+    "axios": "^1.13.6",
+    "formik": "^2.4.9",
+    "moment-timezone": "^0.6.1",
+    "numbro": "^2.5.0",
     "react": "^19.2.4",
-    "react-dom": "^19.2.4"
+    "react-dom": "^19.2.4",
+    "react-draggable": "^4.5.0",
+    "react-error-boundary": "^6.1.1",
+    "react-resizable-panels": "^4.7.3",
+    "react-toastify": "^11.0.5",
+    "swr": "^2.4.1",
+    "usehooks-ts": "^3.1.1",
+    "yup": "^1.7.1"
   },
   "devDependencies": {
     "@babel/core": "^7.29.0",
