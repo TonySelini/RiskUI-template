@@ -5,7 +5,7 @@ import {
   type DialogProps,
 } from "@mui/material";
 import CloseIcon from "@mui/icons-material/Close";
-import { RGBACOLORS } from "../../utils/colors";
+import { COLORS } from "../utils/colors";
 
 interface BaseDialogProps extends DialogProps {
   setIsOpen: (open: boolean) => void;
@@ -36,7 +36,7 @@ export default function DialogWrapper({
           color: "error.main",
           borderRadius: 0,
           "&:hover": {
-            backgroundColor: RGBACOLORS.RED600_08,
+            backgroundColor: COLORS.RED600,
           },
         }}
       >

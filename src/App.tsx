@@ -1,10 +1,12 @@
 import { ToastContainer } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
 import { ErrorBoundary } from "react-error-boundary";
-import './App.css'
 import { createTheme, ThemeProvider } from "@mui/material/styles";
+import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
+import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
 import { ErrorFallback } from "./common/ErrorFallback";
 import { RiskPage } from "./components/RiskPage";
+import "react-toastify/dist/ReactToastify.css";
+import './App.css'
 const darkTheme = createTheme({
   palette: {
     mode: "dark",
@@ -13,10 +15,12 @@ const darkTheme = createTheme({
 function App() {
   return (
     <ThemeProvider theme={darkTheme}>
-      <ToastContainer />
-      <ErrorBoundary FallbackComponent={ErrorFallback}>
-        <RiskPage />
-      </ErrorBoundary>
+      <LocalizationProvider dateAdapter={AdapterDayjs}>
+        <ToastContainer />
+        <ErrorBoundary FallbackComponent={ErrorFallback}>
+          <RiskPage />
+        </ErrorBoundary>
+      </LocalizationProvider>
     </ThemeProvider>
   )
 }
